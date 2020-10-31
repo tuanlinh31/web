@@ -3,5 +3,10 @@ h1 {
     font-size: 150px;
     font-family: SansSerif;
     line-height: 1.5;
+    text-align: center;
 
+}
+p {
+    text-align: justify;
+    color: green;
 }
