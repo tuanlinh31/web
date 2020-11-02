@@ -26,8 +26,8 @@ body{
 }
 
 span{
-    margin-left: 80px;
-    vertical-align: auto;
+    margin-right: 300px;
+    float: right;
 }
 span1{
     font-weight: 300;
