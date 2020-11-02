@@ -21,11 +21,10 @@ ul{
 
 body{
     width: 800px;
-    margin-left: 30%;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-left: 550px solid black;
+    border-bottom: 10px solid black;
+    border-right: 550px solid black;
+    border-top: 10px solid black;
     background: white;
 }
 
