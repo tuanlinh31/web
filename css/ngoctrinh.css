@@ -1,12 +1,33 @@
+body{
+    background-image: url("../imgs/Full-HD-Desktop-Wallpaper.jpg");
+    background-repeat: no-repeat;
+
+}
+
 h1 {
     color: rgb(255,0,0);
     font-size: 150px;
     font-family: SansSerif;
     line-height: 1.5;
     text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    border: 1px solid red;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
 
 }
 p {
-    text-align: justify;
+    text-align: center;
     color: green;
+    font-weight: 400;
+    text-indent:20px;
+    width: 600px;
+    background-color: orange;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
 }
