@@ -20,13 +20,17 @@ ul{
 }
 
 body{
-    width: 700px;
-    padding-left: 35%;
-
+    width: 800px;
+    border-left: 550px solid black;
+    border-bottom: 10px solid black;
+    border-right: 550px solid black;
+    border-top: 10px solid black;
+    background: white;
 }
 
 span{
-    padding-left: 70px;
+    margin-right: 300px;
+    float: right;
 }
 span1{
     font-weight: 300;
@@ -40,3 +44,8 @@ h5{
     font-weight: 300;
     font-style: italic;
 }
+span3 {
+    background: white;
+
+}
+
