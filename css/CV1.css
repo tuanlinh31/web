@@ -1,9 +1,15 @@
 body{
     background-image: url("../imgs/photo-1497032628192-86f99bcd76bc.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
+    background-repeat: no-repeat;
+    background-size: 1000px 1200px;
+    background-position: 450px;
+    background-color: black;
+
+}
+#rblack{
+    background-color: black;
+}
 #content {
     margin: 30px 600px 0px 600px;
     background-color: white;
