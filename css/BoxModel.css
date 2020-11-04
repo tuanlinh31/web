@@ -1,0 +1,76 @@
+body{
+    background-color: #fafafa;
+}
+img{
+    max-width: 100%;
+}
+div{
+    background-color: white;
+    float: left; /*don khoi*/
+    width: 300px;
+    /*border: 1px solid #666666;*/
+    margin: 10px 10px 5px 15px ;/*khoang cach giua cac phan tu voi nhau, theo chieu kim dong ho*/
+    /* neu chieu nao k co thi lay thang doi dien*/
+    padding: 20px;
+    box-sizing: border-box; /*tinh dien tich tu dau*/
+    box-shadow: 10px 10px 5px #aaaaaa;/*day bong theo truc tung, truc hoanh,do nhoe cua bong*/
+    border-radius: 40px;
+}
+span{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    transition: background-color 300ms; /*lam cac hieu ung xay ra tu tu */
+    animation: den_giao_thong2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+span:hover{
+    background-color: green;
+}
+/*trang thai khi ng dung dua chuot vao thi thay doi*/
+@keyframes den_giao_thong {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: green;
+    }
+
+}
+@keyframes den_giao_thong2 {
+    0%{
+        width: 0px;
+
+    }
+    20%{
+        width: 300px;
+    }
+    40%{
+        width: 500px;
+    }
+    60%{
+        width: 600px;
+    }
+    80%{
+        width: 400px;
+    }
+    100%{
+        width: 0px;
+    }
+
+}
+
+#nt{
+    background-color: darkseagreen;
+
+}
+#nt p{
+    color: orange;
+}
+
+#nt:hover p{
+    color: red;
+}
