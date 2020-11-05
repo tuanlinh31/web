@@ -9,13 +9,17 @@ body{
     background-color: #f5f4f4;
     box-sizing: border-box;
     float: left;
+    margin-left: calc(50% - 500px);
+    box-shadow: 0 0 5px #aaaaaa;
+    border-radius: 10px;
 }
 .title{
-    width: 92%;
+    width: 96%;
     float: left;
     box-sizing: border-box;
     background-color:#ffffff ;
     margin: 10px 30px 0px 25px  ;
+    border-radius: 10px;
 }
 .title h1{
     padding-left: 40px;
@@ -30,7 +34,8 @@ body{
     background-color: #ffffff;
     float: left;
     box-shadow: 0 0 5px #aaaaaa;
-    margin: 80px 0 0 30px;
+    margin: 80px 0 0 40px;
+    border-radius: 10px;
 }
 
 .box img{
