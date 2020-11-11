@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 600px;
+    height: 1000px;
+    margin-left: calc(50% - 300px);
+    float: left;
+    background-color: #f6f8f7;
+}
+.top h1{
+    text-align: center;
+    padding-top: 25px;
+}
+.content-box{
+    width: 500px;
+    margin: 30px 50px 50px 50px;
+    height: 530px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.ip-text{
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+
+}
+input[type="text"]{
+    line-height: 1.5;
+    font-size: 16px;
+    padding:2px 0px 2px 2px ;
+}
+.ip-text:focus{
+    border: 0.5px solid red;
+}
+.ip-text1{
+    width: 340px;
+    height: 60px;
+    border-radius: 10px;
+}
+input[type="email"]{
+    width: 340px;
+    height: 60px;
+    border-radius: 10px;
+    padding:2px 0px 2px 2px ;
+}
+.form-group{
+    margin: 5px 30px 0px 74px;
+}
+
+
+.form-group h2{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.content-box h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.button {
+    width: 340px;
+    background-color: #4168dd;
+    margin: 30px 50px 20px 74px;
+    color: #f4f5fe;
+    border-radius: 20px;
+}
+.button h2{
+    padding: 20px 50px 20px 95px;
+}
+.button a{
+    text-decoration: none;
+    color: #fafafa;
+}
+.bot {
+    margin-left: 50px;
+    padding-left: 150px;
+    margin-top: 50px;
+}

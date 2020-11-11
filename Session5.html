@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/Form.css">
+
+</head>
+<body>
+    <form action="#" method="get">
+        <div class="form-group">
+            <label>Fullname
+            <input class="ip-text" name="fullname" required type="text" placeholder="Fullname"/>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>email
+            <input name="email" class="ip-text" required type="email" placeholder="Email.."/>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>password
+            <input name="pwd" class="ip-text" type="password" required placeholder="Password"/>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>birthday
+            <input name="birthday"  class="ip-text" required type="date" placeholder="Birthday.."/>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>color
+            <input name="mycolor" type="color" placeholder="My Color"/>
+            </label>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label></label>
+            <label><input name="gender" type="radio" value="nam"/>Nam</label>
+            <label><input name="gender" type="radio" value="nu"/>Nu</label>
+            <label><input name="gender" type="radio" value="khac"/>Khac</label>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label><input type="checkbox" checked name="ready"/>I'm ready</label>
+
+        </div>
+
+        <div class="form-group">
+            <select name="city">
+            <option>Vui long chon tinh</option>
+            <option value="hn">Ha Noi</option>
+            <option value="sg">TP. Ho Chi Minh</option>
+            <option value="hp">Hai Phong</option>
+            <option value="ct">Can Tho</option>
+            </select>
+
+        </div>
+
+
+
+        <br>
+        <textarea name="description" rows="10" cols="100" placeholder="Mo ta ban than"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </form>
+
+</body>
+</html>
