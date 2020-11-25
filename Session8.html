@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoJS</title>
+    <link rel="stylesheet" href="css/DemoJS.css">
+</head>
+<body>
+    <script type="text/javascript">
+        //code JS viet tai day
+        var x;
+        x=10;
+        var z = "ghsdhhs''''''''";
+        console.log(z);
+        console.log("Do dai cua z = " + z.length);
+        if (z.length>20){
+            console.log("vuot qua so luong cho phep");
+        }
+        else{
+            console.log("van chua den 20 ky tu");
+        }
+        /*for(var i =0;i<z.length;i++){
+            console.log("i=" +i);
+        }*/
+        var arr=[];
+        arr[0] = 5;
+        arr[2] = 16;
+        arr.push(15);
+        arr.push("Xin Chao");
+        for (var i=0; i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.map((e) =>{
+            //e cung giong arr[i]
+            console.log(e)
+            }
+        )
+        var x = tinhtong(4,5);
+        function tinhtong(a,b){
+            return a+b;
+        }
+        console.log(x);
+        x = tinhtong(4,"hello");
+        console.log(x);
+        function timsolonnhat(a){
+            var max = a[0];
+            a.map((e) =>{
+                if(e>max){
+                    max = e;
+                }
+            })
+            console.log("Max = " +max );
+        }
+        //timsolonnhat(4);
+        var arr2 = [1,2,3,4,5,6];
+        if(arr2.includes(4)){
+            console.log("4 co trong mang");
+        }else {
+            console.log("khong co");
+        }
+    </script>
+    <script type="text/javascript" src="JS/DemoJS.js">
+        //k viet code js o day
+    </script>
+</body>
+</html>

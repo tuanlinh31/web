@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 10</title>
+</head>
+<body>
+    <h1 id="head1">Tiêu đề trang</h1>
+    <p id="p1">
+        Tương tự chiến dịch tranh cử khác thường do ảnh hưởng của Covid-19, lễ nhậm chức của Tổng thống đắc cử Joe Biden được cho là sẽ không giống bất kỳ buổi lễ tuyên thệ nào của lãnh đạo nước Mỹ trong lịch sử hiện đại. Một số đề xuất đã được nêu trong các cuộc thảo luận bao gồm yêu cầu những người tham dự đeo khẩu trang, duy trì giãn cách xã hội, hay xét nghiệm nCoV cho những người dự kiến tiếp xúc gần với Biden.
+    </p>
+    <script type="text/javascript">
+        function demo(){
+            var h = document.getElementById("head1");
+            h.innerText = "Tiêu đề sau khi chỉnh sửa";
+            var pp = document.getElementById("p1");
+            pp.style.color = "red";
+            pp.style.fontSize= "18px";
+            var text = pp.innerText;
+            pp.innerHTML = "<span>"+text+"</span>";
+            pp.classList.add("abc") //them class classlist tra ve 1 array
+            pp.classList.remove("xyz") //xoa class
+        }
+        setTimeout(demo,3000);
+
+        var f = true;
+        function Img(){
+            var x = document.getElementById("nt");
+            if(f){
+                x.style.display = "block";
+                f = false;
+            }else {
+                x.style.display = "none";
+                f = true;
+            }
+        }
+        //setInterval(Img,3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //alert("Cam tre em duoi 18 tuoi");//void
+        /*var c = confirm("Ban chac chan muon vao xem");//boolean true false
+        if(c){
+            console.log("Ok men");
+        }else{
+            console.log("Cancel");
+        }*/
+        //var p  = prompt("Ban ten la gi");//tra ve string
+        /*p = parseInt(p);
+        //parseFloat van co phan le?
+        if(isNaN(p)){
+            console.log("Error")
+        }else {
+            console.log(p+5)
+        }*/
+        //Vi du: tao 1 so ngau nhien 0 - 99 (so may man)
+        //Sau do cho nguoi dung nhap 1 so -> kiem tra xem trung giai hay k
+        /*var rd = parseInt(Math.random()*100);
+        var luckyNumber = prompt("Nhap so may man");
+        luckyNumber = parseInt(luckyNumber);
+        if(luckyNumber==rd){
+            alert("Chuc mung trung giai");
+        }else{
+            alert("Chuc may man lan sau");
+        }*/
+        var vl =[];
+        var count =0;
+        do{
+            var n = parseInt(Math.random()*46);
+            if(!vl.includes(n)){
+                vl.push(n);
+            }
+        }while(vl.length<5);
+        console.log(vl);
+        var ln=[];
+        do {
+            var n = prompt("chon 1 so: ");
+            n = parseInt(n);
+            if (!isNaN(n) && n >= 0 && n <= 46 && !ln.includes(n)) {
+                ln.push(n);
+            }
+        }while (ln.length<5);
+
+        var count =0;
+        ln.map((e)=>{
+           if(vl.includes(e)){
+               count++
+           }
+        });
+        if(count == 5){
+            console.log("chuc mung ban trung thuong");
+        }else{
+            console.log("chuc ban may man lan sua");
+        }
+
+
+    </script>
+</body>
+</html>
