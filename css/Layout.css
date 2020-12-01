@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto';
+    font-family:  sans-serif;
     font-size: 14px;
     color: #222222;
     background-color: #f2f2f2;
@@ -18,17 +18,16 @@ img{
 }
 .container{
     width: 1200px;
-    float: none;
     margin: 0 auto;
+    float: none;
 }
 .header{
     background-color: #ffffff;
     border-bottom: 1px solid #f2f2f2;
     padding: 30px 0;
 }
-.header.logo{
+.header .logo{
     float: left;
-
 }
 .top-links{
     float: right;
@@ -36,7 +35,6 @@ img{
 .logo a{
     font-size: 25px;
     line-height: 1;
-    float: left;
     text-decoration: none;
 }
 .top-links li{
@@ -44,12 +42,12 @@ img{
     float: left;
     margin-left: 30px;
 }
-.top-links li a {
+.top-links li a{
     line-height: 25px;
     font-size: 15px;
     text-decoration: none;
 }
-.nav {
+.nav{
     background-color: #ffffff;
     padding: 20px 0;
     margin-bottom: 30px;
@@ -59,47 +57,19 @@ img{
     list-style: none;
     margin-right: 30px;
 }
-.menu li .last {
+.menu li.last{
     float: right;
     margin-right: 0;
 }
-.content {
+.content{
     float: left;
     width: 66.67%;
     padding-right: 15px;
 }
-
 .sidebar{
     float: left;
     width: 33.33%;
     padding-left: 15px;
-    box-sizing: border-box;
-}
-.paddingcon{
-    width: 100%;
-}
-.form-group {
-    margin-bottom: 15px;
-}
-input[type="text"]{
-    width: 100%;
-    padding: 15px 10px;
-}
-input[type="password"]{
-    width: 100%;
-    padding: 15px 10px;
-}
-.Sub{
-    text-align: center;
-    background-color: #e41407;
-}
-.Sub h2{
-    font-size: 12px;
-    padding: 20px 0;
-}
-.subscribe p{
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 .post{
     float: left;
@@ -107,48 +77,13 @@ input[type="password"]{
     background-color: #ffffff;
     padding: 30px;
 }
-.post a{
-    color: #e19695;
-}
-.post h3{
-    padding: 20px 0;
-    font-size: 11px;
-}
-.underpost{
-    padding-top: 30px;
-}
-.block {
+.block{
     float: left;
     width: 100%;
-    padding: 40px;
     background-color: #ffffff;
+    padding: 30px;
     margin-bottom: 30px;
-
 }
-.subscribe {
-    background-color: #333333;
-    color: #fafafa;
-}
-.icons{
-    background-color: #ffffff;
-}
-.icons li{
-    list-style: none;
-    float: left;
-    margin: 10px 10px 5px 0;
-}
-
-.iconsimg {
-    height: auto;
-    width: 40px;
-    margin: 5px 5px -10px 5px;
-}
-.search {
-    height: 250px;
-}
-.search1 {
-}
-.search1:focus{
-    outline: none;
-    border: 1px solid #c0c0c0;
+.subcribe{
+    background-color: #666666;
 }
