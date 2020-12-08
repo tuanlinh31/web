@@ -3,7 +3,7 @@ function grid(arr) {
     for (var i=0;i<arr.length;i++){
         grid_html+= "<div class=\"col-md-4\">\n" +
             "                    <div class=\"item\">\n" ;
-        grid_html+=    "       <img src =\""+arr[i].image+"\"\n";
+        grid_html+=   "                    <img src =\""+arr[i].image+"\"\n";
             "                        <h2>Tiêu đề item</h2>\n" +
             "                        <p class='price'>20.000đ</p>\n" +
             "                    </div>\n" +
@@ -20,7 +20,7 @@ function getMenu() {
             rs = JSON.parse(rs); // bien string thanh JSON
             var menu = rs.data;
             console.log(menu);
-            document.getElementById("nav").innerHTML = grid(menu);
+            document.getElementById("" + "").innerHTML = grid(menu);
         }
     }
     xhttp.open("GET","https://foodgroup.herokuapp.com/api/today-special");

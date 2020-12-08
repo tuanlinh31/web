@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="libs/boostrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/lab_s12.css">
+</head>
+<body>
+    <header class="section header">
+        <div class="parent">
+            <h1>Xac dinh vi tri trong tabs</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <button type="button" ondblclick="close" onclick="home()">Home</button>
+            </li>
+            <li>
+                <button type="button" onclick="profile()">profile</button>
+            </li>
+            <li>
+                <button type="button" onclick="messages()">messages</button>
+            </li>
+            <li>
+                <button type="button" onclick="settings()">settings</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="section main">
+        <h2 id="home">This is home content</h2>
+        <h2 id="profile">This is profile content</h2>
+        <h2 id="messages">This is messages content</h2>
+        <h2 id="settings">This is settings content</h2>
+    </section>
+    <script type="text/javascript">
+        function home(){
+            document.getElementById("home").style.display = "block";
+            document.getElementById("profile").style.display="none";
+            document.getElementById("messages").style.display="none";
+            document.getElementById("settings").style.display="none";
+        }
+        function profile(){
+            document.getElementById("profile").style.display = "block";
+            document.getElementById("home").style.display="none";
+            document.getElementById("messages").style.display="none";
+            document.getElementById("settings").style.display="none";
+            document.getElementById("profile").style.borderBottom = "none"
+        }
+        function messages(){
+            document.getElementById("messages").style.display = "block";
+            document.getElementById("profile").style.display="none";
+            document.getElementById("home").style.display="none";
+            document.getElementById("settings").style.display="none";
+        }
+        function settings(){
+            document.getElementById("settings").style.display = "block";
+            document.getElementById("profile").style.display="none";
+            document.getElementById("messages").style.display="none";
+            document.getElementById("home").style.display="none";
+        }
+    </script>
+</body>
+</html>

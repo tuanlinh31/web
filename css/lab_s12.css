@@ -1,0 +1,12 @@
+.nav li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+#home, #profile, #messages, #settings {
+    display: none;
+}
+button{
+    background-color: #ffffff;
+    border: none;
+}
