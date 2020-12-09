@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NAV TABS</title>
+    <link rel="stylesheet" href="libs/boostrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/labs13.css">
+</head>
+<body>
+<section class="col-md-12">
+    <div class="container">
+        <ul class="nav tab-list">
+            <li>
+                <a href="javascript:void(0);" onclick="tab('home',this);" class="navbar-link ">Home</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="tab('profiles',this);"  class="navbar-link">Profiles</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="tab('messages',this);"  class="navbar-link active">Messages</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="tab('setting',this);"  class="navbar-link">Setting</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="box-content col-md-6 " id="home">
+                Home
+            </div>
+            <div class="box-content col-md-6" id="profiles">
+                Profile
+            </div>
+            <div class="box-content col-md-6 active" id="messages">
+                Messages
+            </div>
+            <div class="box-content col-md-6" id="setting">
+                Setting
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function tab(box,a) {
+            var boxs = document.getElementsByClassName("box-content");
+            for(var i=0;i<boxs.length;i++){
+                // boxs[i].style.display = "none";
+                boxs[i].classList.remove("active");
+            }
+            document.getElementById(box).classList.add("active");
+
+            var links = document.getElementsByClassName("navbar-link");
+            for(var i=0;i<links.length;i++){
+                //     links[i].style.borderColor = "#ffffff";
+                //     links[i].style.borderBottomColor = "#000000";
+                links[i].classList.remove("active");
+            }
+            // a.style.borderColor = "#000000";
+            // a.style.borderBottomColor = "#ffffff";
+            a.classList.add("active");
+        }
+    </script>
+</section>
+</body>
+</html>
