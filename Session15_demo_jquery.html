@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery</title>
+    <script src="libs/jquery-3.5.1.js"></script>
+
+    <link rel="stylesheet" href="libs/boostrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/demo_jQuery.css">
+</head>
+<body>
+    <header class="header col-md-12">
+        <div class="container text-center">
+            <h1>Day la header</h1>
+        </div>
+    </header>
+    <section class="col-md-12">
+        <div class="container">
+            <h1 id="head1">Tieu de</h1>
+            <p class="page">Doan van...</p>
+            <button type="button" onclick="show()">SHOW</button>
+            <button type="button" onclick="hide()">HIDE</button>
+            <button type="button" onclick="toggle()">ONOFF</button>
+            <div class="box"></div>
+            <button type="button" onclick="show()">SHOW</button>
+            <button type="button" onclick="hide()">HIDE</button>
+            <button type="button" onclick="toggle()">ONOFF</button>
+            <div class="box"></div>
+            <button type="button" onclick="show()">SHOW</button>
+            <button type="button" onclick="hide()">HIDE</button>
+            <button type="button" onclick="toggle()">ONOFF</button>
+            <div class="box"></div>
+            <button type="button" onclick="show()">SHOW</button>
+            <button type="button" onclick="hide()">HIDE</button>
+            <button type="button" onclick="toggle()">ONOFF</button>
+            <div class="box"></div>
+            <button type="button" onclick="show()">SHOW</button>
+            <button type="button" onclick="hide()">HIDE</button>
+            <button type="button" onclick="toggle()">ONOFF</button>
+            <div class="box"></div>
+        </div>
+    </section>
+<script type="text/javascript">
+    //su kien khi ng dung use scroll
+    window.onscroll =function (){
+        var v = $("window").scrollTop();
+        if(v>200){
+            var h  = $(".header");
+            h.addClass("active");
+        }else{
+            var h  = $(".header");
+            h.removeClass("active");
+        }
+    }
+    function toggle(){
+        var b = $(".box");
+        //b.toggle();
+        // b.fadeToggle();
+        // b.slideToggle();
+        b.animate({
+            "margin-left":"400px"
+        },3000);
+    }
+    function show(){
+        var b = $(".box");
+        // b.fadeIn();
+        b.slideDown(300);
+    }
+    function hide(){
+        var b = $(".box");
+        // b.fadeOut();
+        b.slideUp(300);
+    }
+    //cach tao doi tuong cua jQuery --> tap hop cua jQuery
+    var ob = $("#head1");
+    var ab = $("h1");
+    var pp = $(".page");
+    var p2 = $("p.page");
+    //chinh css
+    ob.css("color","red");
+    pp.css("color","green");
+    //khi muon nap nhieu hon 1 thuoc tinh
+    pp.css(
+        {
+            "background-color":"gray",
+            "border": "1px solid orange",
+        }
+    )
+    //dieu chinh text
+    console.log(pp.text());
+    pp.text("Doan van sau khi da sua chua");
+    //dieu chinh html
+    console.log(ob.html());
+    ob.html("<span>vua them the span</span>");
+    //nap them html vao sau
+    pp.append("<h2>them vao sau span kia</h2>");
+    //nap them html vao trc;
+    pp.prepend("<h2>them vao trc span kia</h2>");
+    //them xoa kiem tra class;
+    if(pp.hasClass("xinchao")){
+        pp.removeClass("xinchao");//xoa di
+    }else {
+        pp.addClass("xinchao");//them vao
+    }
+</script>
+</body>
+</html>

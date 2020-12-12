@@ -1,0 +1,26 @@
+.menu {
+    background-color: #0b91e5;
+}
+.menusub{
+    background-color: #202024;
+    height: 500px;
+}
+.list li{
+    color: #3fc8cc;
+    list-style: none;
+    font-size: 20px;
+    border-bottom: 1px solid #636366;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.button{
+    background-color:#202024 ;
+    border: none;
+    outline: none;
+}
+.button1{
+    background-color:#0b91e5 ;
+    border: none;
+    color: #636366;
+    outline: none;
+}

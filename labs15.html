@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/labs15.css">
+    <link rel="stylesheet" href="libs/boostrap 3.4.1/css/bootstrap.css">
+    <script src="libs/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="libs/fontawesome 5.15.1/css/all.css">
+
+</head>
+<body>
+    <section class="menusub col-md-2">
+        <ul class="list col-md-12">
+            <div class="row">
+            <li><button class="button" type="button" onclick="hide()"> <i class="fas fa-times" ></i></button></li>
+            <li>HOME</li>
+            <li>SERVICES</li>
+            <li>BLOG</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            </div>
+        </ul>
+    </section>
+    <section class="menu col-md-10">
+        <h1><button class="button1" type="button" onclick="show()"> MENU</button></h1>
+    </section>
+    <script type="text/javascript">
+        function hide(){
+            var b = $(".menusub");
+            var a = $(".menu");
+            b.hide();
+            b.removeClass("col-md-2");
+            a.removeClass("col-md-10");
+            a.addClass("col-md-12");
+        }
+        function show(){
+            var b = $(".menusub");
+            var a = $(".menu");
+            b.show( );
+            b.addClass("col-md-2");
+            a.addClass("col-md-10");
+            a.removeClass("col-md-12");
+        }
+    </script>
+
+</body>
+</html>
